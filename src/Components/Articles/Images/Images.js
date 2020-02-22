@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 
-import Article from "../services/article.json";
+import Article from "../../../Services/article.json";
 
 export default class Images extends Component {
 

@@ -1,24 +1,24 @@
 import React from 'react';
 import { Component } from 'react';
 
-import Article from "../services/article.json";
+import Article from "../../../Services/article.json";
 
-export default class TypeContent extends Component {
+export default class Title extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            content: ''
+            title: ''
         };
     }
 
     componentDidMount() {
-        this.setState({ content: Article.type_content })
+        this.setState({ title: Article.title })
     }
 
     render() {
         return(
-            <p>{this.state.content}</p>
+            <h1>{this.state.title}</h1>
         );
     }
 }

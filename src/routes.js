@@ -1,17 +1,17 @@
 import React from 'react'; //Necessário para componentes e JSX
 import { Switch, Route } from 'react-router-dom'; //Integração com browser
 
-import Title from "./components/Title";
-import Videos from "./components/Videos";
-import Images from "./components/Images";
-import Author from "./components/Author";
-import Sponsor from "./components/Sponsor";
-import Content from "./components/Content";
-import Description from "./components/Description";
-import TypeContent from "./components/TypeContent";
-import PublicationDate from "./components/PublicationDate";
-import ThumbnailMobile from "./components/ThumbnailMobile";
-import ThumbnailDesktop from "./components/ThumbnailDesktop";
+import Title from "./Components/Articles/Title/Title";
+import Videos from "./Components/Articles/Videos/Videos";
+import Images from "./Components/Articles/Images/Images";
+import Author from "./Components/Articles/Author/Author";
+import Sponsor from "./Components/Articles/Sponsor/Sponsor";
+import Content from "./Components/Articles/Content/Content";
+import Description from "./Components/Articles/Description/Description";
+import TypeContent from "./Components/Articles/Type/TypeContent";
+import PublicationDate from "./Components/Articles/Publication/PublicationDate";
+import ThumbnailMobile from "./Components/Articles/Thumbnails/Mobile/ThumbnailMobile";
+import ThumbnailDesktop from "./Components/Articles/Thumbnails/Desktop/ThumbnailDesktop";
 
 export default function Routes() { //Aqui exportando as rotas como padrão para ser consumida em outros arquivos JS
   return ( //Vai retorar as rotas
