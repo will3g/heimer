@@ -12,6 +12,13 @@ export default class Videos extends Component {
         };
     }
 
+    select() {
+        if (this.props.id !== undefined) {
+            return this.props.id;
+        }
+        return this.props.match.params.id;
+    }
+
     componentDidMount() {
         let videos = [];
 
@@ -21,12 +28,10 @@ export default class Videos extends Component {
 
     render() {
         return(
-            this.state.videos.map(video => { 
-                return <iframe width="560" height="315" 
-                src={video} frameborder="0" allow="accelerometer; 
+            <iframe width="560" height="315" 
+                src={this.state.videos[this.select()]} frameborder="0" allow="accelerometer; 
                 autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
-            })
         );
     }
 }

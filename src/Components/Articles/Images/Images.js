@@ -12,14 +12,21 @@ export default class Images extends Component {
         };
     }
 
+    select() {
+        if (this.props.id !== undefined) {
+            return this.props.id;
+        }
+        return this.props.match.params.id;
+    }
+
     componentDidMount() {
         let images = [];
-        
+
         Article.images.map(image => images.push(image));
         this.setState({images});
     }
 
     render() {
-        return(this.state.images.map(image => <img src={image}/>));
+        return(<img src={this.state.images[this.select()]}/>);
     }
 }

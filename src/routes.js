@@ -1,6 +1,7 @@
 import React from 'react'; //Necessário para componentes e JSX
 import { Switch, Route } from 'react-router-dom'; //Integração com browser
 
+import Article from "./Components/Articles/Article";
 import Title from "./Components/Articles/Title/Title";
 import Videos from "./Components/Articles/Videos/Videos";
 import Images from "./Components/Articles/Images/Images";
@@ -16,10 +17,10 @@ import ThumbnailDesktop from "./Components/Articles/Thumbnails/Desktop/Thumbnail
 export default function Routes() { //Aqui exportando as rotas como padrão para ser consumida em outros arquivos JS
   return ( //Vai retorar as rotas
     <Switch> {/* Serve para garantir que apenas uma rota seja chamada por requisição*/}
-      <Route exact path="/"/>
+      <Route exact path="/" component={Article}/>
       <Route path="/title" component={Title}/>
-      <Route path="/images" component={Images}/>
-      <Route path="/videos" component={Videos}/>
+      <Route path="/:id/images" component={Images}/>
+      <Route path="/:id/videos" component={Videos}/>
       <Route path="/author" component={Author}/>
       <Route path="/content" component={Content}/>
       <Route path="/sponsor" component={Sponsor}/>
