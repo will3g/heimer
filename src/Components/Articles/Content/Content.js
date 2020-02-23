@@ -12,7 +12,7 @@ export default class Content extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         let content = [];
 
         for (const i in Article.content) {

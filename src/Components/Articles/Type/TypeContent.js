@@ -12,7 +12,7 @@ export default class TypeContent extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ content: Article.type_content })
     }
 

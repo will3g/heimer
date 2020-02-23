@@ -12,7 +12,7 @@ export default class Description extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ description: Article.description_article })
     }
 

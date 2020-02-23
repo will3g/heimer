@@ -19,7 +19,7 @@ export default class Videos extends Component {
         return this.props.match.params.id;
     }
 
-    componentDidMount() {
+    componentWillMount() {
         let videos = [];
 
         Article.videos.map(video => videos.push(video));

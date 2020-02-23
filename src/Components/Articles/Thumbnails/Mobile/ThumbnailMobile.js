@@ -12,7 +12,7 @@ export default class ThumbnailMobile extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ ThumbnailMobile: Article.thumbnail_mobile })
     }
 

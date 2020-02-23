@@ -12,7 +12,7 @@ export default class PublicationDate extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ date: Article.publication_date })
     }
 
