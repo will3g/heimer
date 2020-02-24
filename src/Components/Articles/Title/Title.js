@@ -1,6 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 
+import Author from "../Author/Author";
+import PublicationDate from "../Publication/PublicationDate";
+
 import Article from "../../../Services/article.json";
 
 import "../../../Assets/style.css"; 
@@ -16,7 +19,7 @@ export default class Title extends Component {
     }
 
     componentWillMount() {
-        this.setState({ title: Article.title })
+        this.setState({ title: Article.title })        
     }
 
     render() {
@@ -26,7 +29,13 @@ export default class Title extends Component {
 
                 <h1 class="title">
                     {this.state.title}                
-                </h1>                               
+                </h1>
+
+                <Author />
+                <div>
+                   Publicado em: <PublicationDate />
+                </div>
+
                 <div class="separator"></div>
             </div>
             

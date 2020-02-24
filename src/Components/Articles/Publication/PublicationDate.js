@@ -18,7 +18,15 @@ export default class PublicationDate extends Component {
 
     render() {
         return(
-            <summary>{this.state.date}</summary>
+
+            <time>
+
+                <b> 
+                    {this.state.date}
+                </b> 
+                
+            </time>
+
         );
     }
 }

@@ -23,11 +23,8 @@ export default function home() {
             <Videos id="1" />
             <Footer />
             {/* 
-            <Author /> */}
-            {/* 
-            
-            
-            <Footer /> */}
+             */}
+           
         </>
     );
 }
