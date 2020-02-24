@@ -13,7 +13,7 @@ export default class Description extends Component {
     }
 
     componentWillMount() {
-        this.setState({ description: Article.description_article })
+        this.setState({ description: Article.description })
     }
 
     render() {
