@@ -28,10 +28,18 @@ export default class Videos extends Component {
 
     render() {
         return(
-            <iframe width="560" height="315" 
-                src={this.state.videos[this.select()]} frameborder="0" allow="accelerometer; 
-                autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+
+            <div class="wrapper">
+
+                <iframe  
+                    src={this.state.videos[this.select()]} 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>                    
+                </iframe>
+                
+            </div>
+            
         );
     }
 }

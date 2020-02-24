@@ -3,6 +3,9 @@ import { Component } from 'react';
 
 import Article from "../../../Services/article.json";
 
+import "../../../Assets/style.css"; 
+import "../../../Assets/responsive.css";
+
 export default class Title extends Component {
 
     constructor(props) {
@@ -18,7 +21,15 @@ export default class Title extends Component {
 
     render() {
         return(
-            <h1>{this.state.title}</h1>
+
+            <div class="wrapper">
+
+                <h1 class="title">
+                    {this.state.title}                
+                </h1>                               
+                <div class="separator"></div>
+            </div>
+            
         );
     }
 }

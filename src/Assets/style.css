@@ -1,0 +1,144 @@
+@media only screen and (max-width: 600px) {    
+    body 
+    {      
+      margin: 0px;
+      font-family: 'Noto Serif','arial';
+      font-size: 12px;
+      overflow-x: hidden;       
+    }
+
+    img
+    {
+      /* borda */
+      border-radius: 3px;
+
+      /* responsividade na imagem */
+      max-width: 100%;
+      height: auto;
+
+      /* centralizando img */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     
+      /* espaçamento */
+      margin-top:20px;
+
+      /* bordas */
+      border:6px solid dodgerblue;      
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+      box-sizing: border-box;      
+    }  
+    
+    iframe
+    {
+      width: 100%;
+      /* borda */
+      border-radius: 3px;
+
+      /* responsividade na imagem */
+      max-width: 100%;
+      height: auto;
+
+      /* centralizando img */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;     
+
+      /* espaçamento */
+      margin-top:20px;
+
+      /* bordas */
+      border:6px solid dodgerblue;      
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+      box-sizing: border-box;
+    }
+
+    footer
+    {
+      height: 400px;
+      width: 100%;
+      background-color: rgba(29, 26, 26, 0.973);
+
+      margin-top: 40px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;  
+
+      padding: 0px !important; 
+    }
+
+    .wrapper
+    {
+      padding: 10px;
+    }
+   
+    .title
+    {      
+      text-transform: uppercase;
+      display: block
+    }
+
+    .subtitle
+    {      
+      font-weight: lighter;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+    }
+
+    .matter
+    {      
+      line-height: 1.5rem;
+      color: rgba(29, 29, 29, 0.795);
+      font-weight: 600;
+      font-size: 1.3em;
+      font-family: 'Noto','arial';
+    }
+    
+    .separator {
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+    }
+
+    footer > ul li
+    {
+      color: rgb(175, 173, 169);
+      font-size: 16px;
+      line-height: 50px;
+      list-style-type: none;
+
+      padding: 10px 10px;
+
+      display: flex;
+      align-content: center;
+
+    }
+
+    
+  }
+
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: rgb(3, 83, 109);
+    }
+
+    .image-subject{
+      display: none;
+    }
+
+    imput[type="text"] {
+
+    }
+
+    
+  }

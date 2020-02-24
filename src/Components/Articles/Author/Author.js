@@ -18,9 +18,11 @@ export default class Author extends Component {
 
     render() {
         return(
-            <address>
-                Escrito por <a rel="author" href="#">{this.state.author}</a>
-            </address>
+            <div>                  
+                <address>
+                    <span>Escrito por: </span><b>{this.state.author}</b>
+                </address>
+            </div>
         );
     }
 }

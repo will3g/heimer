@@ -27,6 +27,17 @@ export default class Images extends Component {
     }
 
     render() {
-        return(<img src={this.state.images[this.select()]}/>);
+        return(
+
+            <div class="wrapper">
+
+                <img 
+                    alt = "Imagem da materia" 
+                    src = {this.state.images[this.select()] }                                      
+                />
+
+            </div>
+            
+        );
     }
 }

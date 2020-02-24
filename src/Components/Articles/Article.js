@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Title from "./Title/Title";
+import Matter from "./Matter/Matter";
+import Footer from "./Footer/Footer";
 import Videos from "./Videos/Videos";
 import Images from "./Images/Images";
 import Author from "./Author/Author";
@@ -15,9 +17,17 @@ import ThumbnailDesktop from "./Thumbnails/Desktop/ThumbnailDesktop";
 export default function home() {
     return(
         <>
-            <Title/>
-            <Images id="1"/>
-            <Videos id="1"/>
+            <Title />
+            <Images id="1" />
+            <Matter />
+            <Videos id="1" />
+            <Footer />
+            {/* 
+            <Author /> */}
+            {/* 
+            
+            
+            <Footer /> */}
         </>
     );
 }
