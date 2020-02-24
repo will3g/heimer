@@ -12,7 +12,7 @@ export default class ThumbnailDesktop extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ ThumbnailDesktop: Article.thumbnail_desktop })
     }
 

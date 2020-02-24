@@ -19,7 +19,7 @@ export default class Images extends Component {
         return this.props.match.params.id;
     }
 
-    componentDidMount() {
+    componentWillMount() {
         let images = [];
 
         Article.images.map(image => images.push(image));

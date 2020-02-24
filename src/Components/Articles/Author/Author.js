@@ -12,7 +12,7 @@ export default class Author extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ author: Article.author })
     }
 

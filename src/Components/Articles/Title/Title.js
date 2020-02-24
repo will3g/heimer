@@ -15,7 +15,7 @@ export default class Title extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ title: Article.title })
     }
 

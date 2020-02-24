@@ -12,13 +12,15 @@ export default class Sponsor extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.setState({ sponsor: Article.sponsor })
     }
 
     render() {
         return(
-            <p>{this.state.sponsor}</p>
+            <div className="classe">
+                <p>{this.state.sponsor}</p>
+            </div>
         );
     }
 }

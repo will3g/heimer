@@ -12,8 +12,8 @@ export default class Description extends Component {
         };
     }
 
-    componentDidMount() {
-        this.setState({ description: Article.description_article })
+    componentWillMount() {
+        this.setState({ description: Article.description })
     }
 
     render() {
