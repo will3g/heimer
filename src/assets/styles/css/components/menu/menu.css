@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu:hover .menu__link:not(:hover) {
+    color: #ffc13d;
+}
+
+.menu__list {
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu__group {
+    flex-grow: 1;
+}
+
+.menu__link {
+    display: block;
+}
+
+/* skin */
+
+.menu {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.menu__link {
+    padding: 2rem 1.5rem;
+    font-weight: 700;
+    color: #ffc13d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* states */
+.menu__link:focus,
+.menu__link:active {
+    color: #fff;
+}
+
+/* hover animation */
+
+.menu__link {
+    position: relative;
+    overflow: hidden;
+
+    will-change: color;
+    transition: color .25s ease-out;
+}
+
+.menu__link::before,
+.menu__link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    will-change: width;
+    transition: width .1s ease-out;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu__link::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__link::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.menu__link:hover::before,
+.menu__link:hover::after {
+    width: 100%;
+    transition-duration: .2s;
+}
+
+.page {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #000, #2d2d2d);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .24), 0 2px 4px 0 rgba(0, 0, 0, .48);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+}

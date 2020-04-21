@@ -13,13 +13,14 @@ import Description from "../../components/description/description";
 import TypeContent from "../../components/type/typeContent";
 import PublicationDate from "../../components/publication/publicationDate";
 import Thumbnail from "../../components/thumbnail/thumbnail";
+import Menu from '../../components/menu/menu';
 
-//import "../../assets/style.css";
+import '../../assets/styles/css/components/menu/menu.css';
 
 export default function article() {
     return(
         <>
-
+            <Menu/>
         </>
     );
 }
