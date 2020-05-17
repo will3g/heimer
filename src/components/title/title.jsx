@@ -15,8 +15,8 @@ export default class Title extends Component {
 
     render() {
         return(
-            <div class="wrapper">
-                <h1 class="title">{this.state.title}</h1>
+            <div className="wrapper">
+                <h1 className="title">{this.state.title}</h1>
             </div>
         );
     }

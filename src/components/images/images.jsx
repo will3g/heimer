@@ -31,7 +31,7 @@ export default class Images extends Component {
     render() {
         return(
 
-            <div class="wrapper">
+            <div className="wrapper">
 
                 <img 
                     alt = "Imagem da materia" 

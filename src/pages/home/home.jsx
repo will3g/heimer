@@ -1,26 +1,41 @@
 import React from 'react';
 
-import articleAPI from "../../services/article.json";
+import api from "../../services/home.json";
 
-import Title from "../../components/title/title";
-import Footer from "../../components/footer/footer";
-import Videos from "../../components/videos/videos";
-import Images from "../../components/images/images";
-import Author from "../../components/author/author";
-import Sponsor from "../../components/sponsor/sponsor";
-import Content from "../../components/content/content";
-import Description from "../../components/description/description";
-import TypeContent from "../../components/type/typeContent";
-import PublicationDate from "../../components/publication/publicationDate";
-import Thumbnail from "../../components/thumbnail/thumbnail";
 import Menu from '../../components/menu/menu';
+import FeaturedMain from '../../components/featured/featuredMain';
+import Featured from '../../components/featured/featured';
 
 import '../../assets/styles/css/components/menu/menu.css';
+import '../../assets/styles/css/components/featured/featured.css';
 
 export default function article() {
+
     return(
         <>
             <Menu/>
+            {api.map(e => {
+                    if (e.featured_main) {
+                        return( 
+                            <FeaturedMain 
+                                images={e.images} 
+                                title={e.title} 
+                                description={e.description} 
+                                typeContent={e.type_content}
+                            />
+                        )
+                    } else {
+                        return(
+                            <Featured 
+                                images={e.images} 
+                                title={e.title} 
+                                description={e.description} 
+                                typeContent={e.type_content}
+                            />
+                        )
+                    }
+                }
+            )}
         </>
     );
 }

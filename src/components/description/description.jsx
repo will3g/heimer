@@ -15,7 +15,7 @@ export default class Description extends Component {
 
     render() {
         return(
-            <summary>{this.state.description}</summary>
+            <summary className="description" >{this.state.description}</summary>
         );
     }
 }

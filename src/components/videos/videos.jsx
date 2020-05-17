@@ -25,7 +25,7 @@ export default class videos extends Component {
 
     render() {
         return(
-            <div class="wrapper">
+            <div className="wrapper">
                 <iframe  
                     src={this.state.videos[this.select()]} 
                     frameborder="0" 

@@ -15,7 +15,7 @@ export default class TypeContent extends Component {
 
     render() {
         return(
-            <p>{this.state.content}</p>
+            <p className="type" >{this.state.content}</p>
         );
     }
 }
