@@ -29,12 +29,12 @@ export default class FeaturedMain extends Component {
 
     render() {
         return(
-            <div className="div-img-featured-main">
-                <img className="img-featured-main" src={this.state.images}/>
+            <article className="div-featured-main">
+                <img className="img-featured-main shadow-featured" src={this.state.images}/>
                 <TypeContent typeContent={this.state.typeContent}/>
                 <Title title={this.state.title}/>
                 <Description description={this.state.description}/>
-            </div>
+            </article>
         );
     }
 }

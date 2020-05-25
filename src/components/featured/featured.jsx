@@ -10,6 +10,8 @@ export default class Featured extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            item: '',
+            styelImg: '',
             images: '',
             title: '',
             description: '',
@@ -18,22 +20,28 @@ export default class Featured extends Component {
     }
 
     componentWillMount() {
+        let styelImg = '';
+        let item = this.props.item;
         let images = this.props.images;
         let title = this.props.title;
         let description = this.props.description;
         let typeContent = this.props.typeContent;
 
-        this.setState({ images, title, description, typeContent });
+        if (item == 4 || item == 5) {
+            styelImg = 'shadow-featured';
+        }
+
+        this.setState({ item, styelImg, images, title, description, typeContent });
     }
 
     render() {
         return(
-            <div className="div-img-featured">
-                <img className="img-featured" src={this.state.images}/>
+            <article className={`div-featured item-${this.state.item}`}>
+                <img className={`img-featured ${this.state.styelImg}`} src={this.state.images}/>
                 <TypeContent typeContent={this.state.typeContent}/>
                 <Title title={this.state.title}/>
                 <Description description={this.state.description}/>
-            </div>
+            </article>
         );
     }
 }
