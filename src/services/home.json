@@ -1,5 +1,4 @@
-[
-    {
+[{
         "featured_main": true,
         "title": "O lado sombrio e as polêmicas do Batman",
         "theme": "Venom 2",
@@ -41,17 +40,17 @@
     },
     {
         "featured_main": false,
-        "title": "Mr. Robot chega ao fim",
+        "title": "RYSE: Son of rome atinge 2000 de gamescore",
         "theme": "Venom 2",
-        "description": "Saiba por que a série entrará para a história",
+        "description": "Enquanto pode parecer estranho a demora para adicionar essas conquistas, já que ambas tem alguma relação com o mês de março.",
         "publication_date": "18.02.2020",
         "author": "NICOLAOS GARÓFALO",
         "type": "NOTÍCIA",
-        "type_content": "SÉRIES",
-        "thumbnail_desktop": "https://i.ytimg.com/vi/yww_8NyCcVA/maxresdefault.jpg",
-        "thumbnail_mobile": "https://cdn.ome.lt/iCPhCAvb6j6ourSDZbJHG6rwGZA=/480x360/smart/extras/conteudos/2020-02-18-HYPER-DQ.png",
+        "type_content": "GAMES",
+        "thumbnail_desktop": "https://pplware.sapo.pt/wp-content/uploads/2014/08/Ryse_Son_of_Rome_Rome_1.jpg",
+        "thumbnail_mobile": "https://pplware.sapo.pt/wp-content/uploads/2014/08/Ryse_Son_of_Rome_Rome_1.jpg",
         "images": [
-            "https://presleyson.com.br/wp-content/uploads/2019/02/mr-robot-1200x630-min.jpg"
+            "https://pplware.sapo.pt/wp-content/uploads/2014/08/Ryse_Son_of_Rome_Rome_1.jpg"
         ],
         "sponsor": "Marvel",
         "footer": {
