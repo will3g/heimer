@@ -5,7 +5,7 @@ export default class menu extends Component {
     render() {
         return (
             <>
-                <nav className="page">
+                <nav className="menu">
                     <div className="menuDesk">
                         <ul className="menu__list">
                             <li className="menu__group"><a href="#0" className="menu__link">filmes</a></li>
