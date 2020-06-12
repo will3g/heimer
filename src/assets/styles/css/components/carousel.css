@@ -1,0 +1,11 @@
+#carousel {
+    height: 240px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    #carousel {
+        height: 400px;
+        width: 700px;
+    }
+}
