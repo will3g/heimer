@@ -21,25 +21,17 @@ export default class Images extends Component {
     componentWillMount() {
         let images = [];
 
-        console.log(`@@@@@@@@@@@@@@@@@@@@@@@
-        ${this.props.imagesApiList}`);
-
         Article.images.map(image => images.push(image));
         this.setState({images});
     }
 
     render() {
         return(
-
             <div className="wrapper">
-
-                <img 
-                    alt = "Imagem da materia" 
-                    src = {this.state.images[this.select()] }                                      
-                />
-
+                <amp-img alt = "Imagem da materia" src = {this.state.images[this.select()] }>
+                    <img alt = "Imagem da materia" src = {this.state.images[this.select()] }/>
+                </amp-img>
             </div>
-            
         );
     }
 }

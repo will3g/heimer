@@ -15,7 +15,9 @@ export default class thumbnail extends Component {
 
     render() {
         return(
-            <img src={this.state.Thumbnail}/>
+            <amp-img src={this.state.Thumbnail}>
+                <img src={this.state.Thumbnail}/>
+            </amp-img>
         );
     }
 }

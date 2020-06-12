@@ -30,7 +30,9 @@ export default class FeaturedMain extends Component {
     render() {
         return(
             <article className="div-featured-main">
-                <img className="img-featured-main shadow-featured" src={this.state.images}/>
+                <amp-img className="img-featured-main shadow-featured" src={this.state.images}>
+                    <img className="img-featured-main shadow-featured" src={this.state.images}/>
+                </amp-img>
                 <TypeContent typeContent={this.state.typeContent}/>
                 <Title title={this.state.title}/>
                 <Description description={this.state.description}/>

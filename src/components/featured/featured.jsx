@@ -17,6 +17,7 @@ export default class Featured extends Component {
             description: '',
             typeContent: ''
         };
+
     }
 
     componentWillMount() {
@@ -37,7 +38,9 @@ export default class Featured extends Component {
     render() {
         return(
             <article className={`div-featured item-${this.state.item}`}>
-                <img className={`img-featured ${this.state.styelImg}`} src={this.state.images}/>
+                <amp-img className={`img-featured ${this.state.styelImg}`} src={this.state.images}>
+                    <img className={`img-featured ${this.state.styelImg}`} src={this.state.images}/>
+                </amp-img>
                 <TypeContent typeContent={this.state.typeContent}/>
                 <Title title={this.state.title}/>
                 <Description description={this.state.description}/>
