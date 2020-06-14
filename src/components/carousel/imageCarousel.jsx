@@ -6,20 +6,22 @@ export default class imageCarousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            images: ''
+            api: ''
         };
     }
 
     componentWillMount() {
-
-        let images = this.props.images;
-
-        this.setState({ images });
+        let api = this.props.api;
+        this.setState({ api });
     }
 
     render() {
         return (
-            <amp-img layout="responsive" id="image-carousel" src={this.state.images} width="700" height="400"></amp-img>
+            this.state.api.map((e, index) => {
+                return (
+                    <amp-img key={index} layout="fill" id="image-carousel" src={e.images} width="400" height="300"></amp-img>
+                );
+            })
         );
     }
 }

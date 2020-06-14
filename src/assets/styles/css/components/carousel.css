@@ -1,11 +1,19 @@
 #carousel {
     height: 240px;
     width: 100%;
+    scroll-behavior: smooth;
+}
+
+amp-selector {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    float: right;
 }
 
 @media screen and (min-width: 1025px) {
     #carousel {
-        height: 400px;
-        width: 700px;
+        width: 955px;
     }
 }
+
