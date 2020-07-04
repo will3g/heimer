@@ -29,7 +29,6 @@ export default class carousel extends Component {
                 on="slideChange:carouselWithPreviewSelector.toggle(index=event.index, value=true)" autoplay delay="2000">
                     <ImageCarousel api={this.state.api}/>
                 </amp-carousel>
-                <a href="#id5">click</a>
             </div>
         );
     }

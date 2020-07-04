@@ -40,18 +40,6 @@ export default class carouselList extends Component {
                             )
                         }
 
-                        if (index == 4) {
-                            return (
-                                <div option={index} id="id5" key={index} className="artile-list">
-                                    <a href={e.url}>
-                                        <amp-img className="article-image selected" src={e.images} 
-                                        width={attr.image.width} height={attr.image.height}></amp-img>
-                                        <span className="article-title">{e.title}</span>
-                                    </a>
-                                </div>
-                            )
-                        }
-
                         return (
                             <div option={index} key={index} className="artile-list">
                                 <a href={e.url}>
