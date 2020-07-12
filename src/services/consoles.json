@@ -1,0 +1,77 @@
+[
+    {
+        "consoles": [
+            {
+                "console": "pc",
+                "url": "/pc",
+                "slug": "pc"
+            }
+        ],
+        "thumbnail": "https://obj.ibxk.com.br/layout/voxel/consoles-widget-pc.png"
+    },
+    {
+        "consoles": [
+            {
+                "console": "xbox one",
+                "url": "/xbox-one",
+                "slug": "xbox"
+            },
+            {
+                "console": "xbox 360",
+                "url": "/xbox-360",
+                "slug": "xbox"
+            }
+        ],
+        "thumbnail": "https://obj.ibxk.com.br/layout/voxel/consoles-widget-xbox.png"
+    },
+    {
+        "consoles": [
+            {
+                "console": "ps4",
+                "url": "/ps4",
+                "slug": "ps"
+            },
+            {
+                "console": "ps3",
+                "url": "/ps3",
+                "slug": "ps"
+            },
+            {
+                "console": "ps vita",
+                "url": "/ps-vita",
+                "slug": "ps"
+            },
+            {
+                "console": "psp",
+                "url": "/psp",
+                "slug": "ps"
+            }
+        ],
+        "thumbnail": "https://obj.ibxk.com.br/layout/voxel/consoles-widget-ps.png"
+    },
+    {
+        "consoles": [
+            {
+                "console": "switch",
+                "url": "/switch",
+                "slug": "nintendo"
+            },
+            {
+                "console": "wii u",
+                "url": "/wii-u",
+                "slug": "nintendo"
+            },
+            {
+                "console": "wii",
+                "url": "/wii",
+                "slug": "nintendo"
+            },
+            {
+                "console": "3ds",
+                "url": "/3ds",
+                "slug": "nintendo"
+            }
+        ],
+        "thumbnail": "https://obj.ibxk.com.br/layout/voxel/consoles-widget-nintendo.png"
+    }
+]
