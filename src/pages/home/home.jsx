@@ -1,30 +1,57 @@
 import React from 'react';
 
+// UTILIZADO EM NEWSLIST E CAROUSEL
+//import api from "../../services/home.json";
+
+// UTILIZADO EM REVIEW
 //import api from "../../services/review.json";
-import api from "../../services/home.json";
 
-// import Menu from '../../components/menu/menu';
-// import Carousel from '../../components/carousel/carousel';
-// import CarouselList from '../../components/carousel-list/carouselList';
-// import Review from '../../components/review/review';
-// import Footer from '../../components/footer/footer';
-import Newslist from '../../components/newslist/newslist';
+// UTILIZADO EM CONSOLES
+import api from "../../services/consoles.json";
 
+// UTILIZADO EM MAIS LIDAS
+//import api from "../../services/most-read.json";
+
+// COMPONENTES
+//import Menu from '../../components/menu/menu';
+//import Footer from '../../components/footer/footer';
+//import Review from '../../components/review/review';
+import Consoles from '../../components/consoles/consoles';
+//import Newslist from '../../components/newslist/newslist';
+//import Mostread from '../../components/most-read/mostRead';
+
+// ESTILIZAÇÃO COMPONENTES
+//import '../../assets/styles/css/components/review.css';
+import '../../assets/styles/css/components/consoles.css';
 //import '../../assets/styles/css/components/main.min.css';
+//import '../../assets/styles/css/components/newslist.css';
+//import '../../assets/styles/css/components/most-read.css';
 
-import '../../assets/styles/css/components/newslist.css';
+// UTILIZADO EM CARROSSEL
+//import Carousel from '../../components/carousel/carousel';
+//import CarouselList from '../../components/carousel-list/carouselList';
+// ESTILIZAÇÃO CARROSSEL
+//import '../../assets/styles/css/components/carousel.css';
+//import '../../assets/styles/css/components/image-carousel.css';
 
+
+// URLS:
+/*
+    http://localhost:3000/
+    http://localhost:3000/subhome
+*/
+
+// NÃO CHAMAR MAIS DE UM COMPONENTE POR VEZ, VAI QUEBRAR O CSS
 export default function Home() {
-
     return (
         <>
-            <Newslist api={api}/>
+            {/* <Menu/> */}
+            {/* <Mostread api={api}/> */}
+            {/* <Carousel api={api}/> */}
+            {/* <Newslist api={api}/> */}
+            {/* <Review api={api}/> */}
+            <Consoles api={api}/>
+            {/* <Footer/> */}
         </>
     );
 }
-
-
-// {/* <Menu/> */}
-// {/* <Carousel api={api}/> import '../../assets/styles/css/components/carousel.css'; import '../../assets/styles/css/components/image-carousel.css';*/}
-// {/* <Review api={api}/>  import '../../assets/styles/css/components/review.css'; */}
-// {/* <Footer/> */}
