@@ -4,7 +4,8 @@ import React from 'react';
 //import api from "../../services/home.json";
 
 // UTILIZADO EM NEWSLIST DE SUBHOME
-import api from "../../services/subhome-newslist.json";
+//import api from "../../services/subhome-newslist.json";
+import api from "../../services/newslist-3.json";
 
 // UTILIZADO EM REVIEW
 //import api from "../../services/review.json";
@@ -21,7 +22,8 @@ import api from "../../services/subhome-newslist.json";
 //import Review from '../../components/review/review';
 //import Consoles from '../../components/consoles/consoles';
 //import Newslist from '../../components/newslist/newslist';
-import NewslistSubhome from '../../components/newslist/newslist-subhome';
+//import Newslist from '../../components/newslist/newslist';
+import NewslistSubhome from '../../components/newslist/newslist-3';
 //import Mostread from '../../components/most-read/mostRead';
 
 // ESTILIZAÇÃO COMPONENTES
@@ -29,7 +31,8 @@ import NewslistSubhome from '../../components/newslist/newslist-subhome';
 //import '../../assets/styles/css/components/consoles.css';
 //import '../../assets/styles/css/components/main.min.css';
 //import '../../assets/styles/css/components/newslist.css';
-import '../../assets/styles/css/components/newslist-subhome.css';
+//import '../../assets/styles/css/components/newslist-subhome.css';
+import '../../assets/styles/css/components/newslist-3.css';
 //import '../../assets/styles/css/components/most-read.css';
 
 // UTILIZADO EM CARROSSEL
