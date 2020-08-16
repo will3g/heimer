@@ -33,11 +33,11 @@ export default class newslist extends Component {
         return (
             <amp-list id="newslist-container" layout="fixed-height" src={this.state.api}>
                 <div>
-                    <div class="home-news-list-header">
+                    <header class="home-news-list-header">
                         <a href="/novidades/" class="home-news-list-header-title">Novidades</a>
                         <span class="separator"></span>
                         <a href="/novidades/" class="home-news-list-header-tags-btn">ver todas</a>
-                    </div>
+                    </header>
                     {
                         this.state.api.map((e, index) => {
                             if (index % 4) {
