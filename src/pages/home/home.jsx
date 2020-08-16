@@ -1,47 +1,39 @@
 import React from 'react';
 
-// UTILIZADO EM NEWSLIST E CAROUSEL
-//import api from "../../services/home.json";
-
-// UTILIZADO EM NEWSLIST DE SUBHOME
-//import api from "../../services/subhome-newslist.json";
-import api from "../../services/newslist-3.json";
-
-// UTILIZADO EM REVIEW
-//import api from "../../services/review.json";
-
-// UTILIZADO EM CONSOLES
-//import api from "../../services/consoles.json";
-
-// UTILIZADO EM MAIS LIDAS
-//import api from "../../services/most-read.json";
-
-// COMPONENTES
-//import Menu from '../../components/menu/menu';
-//import Footer from '../../components/footer/footer';
-//import Review from '../../components/review/review';
-//import Consoles from '../../components/consoles/consoles';
-//import Newslist from '../../components/newslist/newslist';
-//import Newslist from '../../components/newslist/newslist';
-import NewslistSubhome from '../../components/newslist/newslist-3';
-//import Mostread from '../../components/most-read/mostRead';
-
-// ESTILIZAÇÃO COMPONENTES
-//import '../../assets/styles/css/components/review.css';
-//import '../../assets/styles/css/components/consoles.css';
-//import '../../assets/styles/css/components/main.min.css';
-//import '../../assets/styles/css/components/newslist.css';
-//import '../../assets/styles/css/components/newslist-subhome.css';
-import '../../assets/styles/css/components/newslist-3.css';
-//import '../../assets/styles/css/components/most-read.css';
-
-// UTILIZADO EM CARROSSEL
-//import Carousel from '../../components/carousel/carousel';
-//import CarouselList from '../../components/carousel-list/carouselList';
-// ESTILIZAÇÃO CARROSSEL
+// UTILIZADO EM NEWSLIST 1 E CAROUSEL
+import api_carousel_and_newslist from "../../services/home.json";
+// CAROUSEL
+// import Carousel from '../../components/carousel/carousel';
 //import '../../assets/styles/css/components/carousel.css';
 //import '../../assets/styles/css/components/image-carousel.css';
+// NEWSLIST 1
+import '../../assets/styles/css/components/newslist.css';
+import Newslist from '../../components/newslist/newslist';
 
+// NEWSLIST DE SUBHOME
+// import '../../assets/styles/css/components/newslist-subhome.css'; // Analisar CSS
+// import api_newslist_subhome from "../../services/subhome-newslist.json";
+// import NewslistSubhome from '../../components/newslist/newslist-subhome';
+//
+//import api_newslist_subhome from "../../services/newslist-3.json";
+//import NewslistSubhome from '../../components/newslist/newslist-3';
+
+// UTILIZADO EM REVIEW
+// import Review from '../../components/review/review';
+// import api_review from "../../services/review.json";
+
+// UTILIZADO EM CONSOLES
+// import api_consoles from "../../services/consoles.json";
+// import Consoles from '../../components/consoles/consoles';
+
+// UTILIZADO EM MAIS LIDAS
+// import api_most_read from "../../services/most-read.json";
+// import Mostread from '../../components/most-read/mostRead';
+
+// COMPONENTES
+// import Menu from '../../components/menu/menu';
+// import Footer from '../../components/footer/footer';
+//import '../../assets/styles/css/components/main.min.css';
 
 // URLS:
 /*
@@ -54,11 +46,11 @@ export default function Home() {
     return (
         <>
             {/* <Menu/> */}
-            {/* <Mostread api={api}/> */}
-            {/* <Carousel api={api}/> */}
-            <NewslistSubhome api={api}/>
-            {/* <Review api={api}/> */}
-            {/* <Consoles api={api}/> */}
+            {/* <Mostread api={api_most_read}/> */}
+            {/* <Carousel api={api_carousel_and_newslist}/> */}
+            <Newslist api={api_carousel_and_newslist}/>
+            {/* <Review api={api_review}/> */}
+            {/* <Consoles api={api_consoles}/> */}
             {/* <Footer/> */}
         </>
     );
