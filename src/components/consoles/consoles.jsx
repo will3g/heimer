@@ -25,7 +25,7 @@ export default class consoles extends Component {
         }
 
         return (
-            <div className="container">
+            <div className="container-console">
                 <a href="#" className="header-console">Consoles</a>
                 <amp-list id="console" layout="fixed-height" src={this.state.api}>
                 {
@@ -38,7 +38,7 @@ export default class consoles extends Component {
                                         e.consoles.map((e, index) => {
                                             return(
                                                 <a className={`${e.slug}-${index}`} href={e.url}>
-                                                    <span className="info console-title">{e.console}</span>
+                                                    <span className="info-console console-title">{e.console}</span>
                                                 </a>
                                             )
                                         })
