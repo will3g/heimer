@@ -8,6 +8,7 @@ export default class menu extends Component {
                 <nav className="menu">
                     <div className="menuDesk">
                         <ul className="menu__list">
+                            <li><a href="#"><div></div></a></li>
                             <li className="menu__group"><a href="#0" className="menu__link">filmes</a></li>
                             <li className="menu__group"><a href="#0" className="menu__link">séries</a></li>
                             <li className="menu__group"><a href="#0" className="menu__link">games</a></li>
