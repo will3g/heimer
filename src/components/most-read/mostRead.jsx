@@ -25,22 +25,22 @@ export default class mostread extends Component {
         }
 
         return (
-            <div className="container">
-                <a href="#" className="header-review">Mais lidas</a>
-                <amp-list id="review" layout="fixed-height" src={this.state.api}>
+            <div className="container-most-read">
+                <a href="#" className="header-most-read">Mais lidas</a>
+                <amp-list id="most-read" layout="fixed-height" src={this.state.api}>
                 {
                     this.state.api.map((e, index) => {
                         return (
-                            <div option={index} key={index} className="artile-list">
+                            <div option={index} key={index} className="artile-list-most-read">
                                 {e.thumbnails.map(thumb => {
                                     console.log(window.matchMedia(thumb.size).matches)
                                     
                                     if (window.matchMedia(thumb.size).matches) {
                                         return(
-                                            <amp-img className="article-image" src={thumb.thumbnail} 
+                                            <amp-img src={thumb.thumbnail} 
                                             width={attr.image.width} height={attr.image.height}>
                                                 <a href={e.url}>
-                                                    <span className="info article-title">{e.title}</span>
+                                                    <span className="info-most-read article-title-most-read">{e.title}</span>
                                                 </a>
                                             </amp-img>
                                         )
@@ -51,8 +51,8 @@ export default class mostread extends Component {
                     })
                 }
             </amp-list>
-                <a href="#" className="footer-review">Veja todas</a>
-                <div className="footer-review-logo"></div>
+                <a href="#" className="footer-most-read">Veja todas</a>
+                <div className="footer-most-read-logo"></div>
             </div>
         );
     }
