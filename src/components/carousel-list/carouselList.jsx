@@ -30,9 +30,9 @@ export default class carouselList extends Component {
                     this.state.api.map((e, index) => {
                         if (index == 0) {
                             return (
-                                <div option={index} selected key={index} className="artile-list">
+                                <div option={index} key={index} className="artile-list">
                                     <a href={e.url}>
-                                        <amp-img className="article-image selected" src={e.images} 
+                                        <amp-img className="article-image" src={e.images} 
                                         width={attr.image.width} height={attr.image.height}></amp-img>
                                         <span className="article-title">{e.title}</span>
                                     </a>
