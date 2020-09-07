@@ -1,23 +1,7 @@
-@media (max-width: 375px) {
-    #console,
-    .container-console {
-        max-width: 100% !important;
-    }
-
-    .info-console {
-        margin-left: 12px !important;
-    }
-
-    .footer-console {
-        float: right !important;
-        margin-right: 16px !important;
-        margin-left: 0 !important;
-    }
-}
-
 .container-console {
+    display: table;
     overflow: hidden;
-    max-width: 400px;
+    max-width: 348px;
     max-height: 455px;
     padding: 15px 0 0 0;
     background-color: #101010;
@@ -66,7 +50,7 @@
     margin-top: 12px;
     font-weight: 700;
     font-size: 0.875rem;
-    margin-left: 300px;
+    margin-left: 240px;
     text-decoration: none;
     font-family: sans-serif;
     letter-spacing: -0.018em;
@@ -82,7 +66,7 @@
 
 #console {
     overflow: hidden;
-    max-width: 400px;
+    width: 348px;
     max-height: 360px;
     margin: 15px 0 -5px 0;
 
@@ -164,4 +148,52 @@ a.nintendo-2 {
 
 a.nintendo-3 {
     margin-left: 260px;
+}
+
+@media (max-width: 320px) {
+    #console,
+    .container-console {
+        max-width: 320px;
+    }
+    .footer-console {
+        margin-left: 220px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    #console,
+    .container-console {
+        max-width: 340px;
+    }
+
+    .info-console {
+        margin-left: 12px;
+    }
+
+    .footer-console {
+        float: right;
+        margin-right: 16px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 679px) {
+    #console {
+        width: 375px;
+    }
+    .footer-console {
+        margin-left: 260px;
+    }
+}
+
+@media (min-width: 680px) {
+    .container-console {
+        margin: 0 0 20px 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container-console {
+        margin: 0 0 20px 0;
+    }
 }
