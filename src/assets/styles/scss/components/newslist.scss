@@ -566,8 +566,7 @@
     }
 
     #newslist-container-1 {
-        max-width: 610px;
-        margin: 0 auto;
+        width: 610px;
         overflow: hidden;
     }
 
@@ -719,5 +718,12 @@
 
     .article-main-newslist .i-amphtml-layout-size-defined .i-amphtml-fill-content:hover {
         opacity: .8;
+    }
+}
+
+@media (min-width: 990px) {
+    #newslist-container-1 {
+        float: left;
+        margin: 0 auto;
     }
 }
