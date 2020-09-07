@@ -25,6 +25,7 @@ import Mostread from '../../components/most-read/mostRead';
 // COMPONENTES
 import Menu from '../../components/menu/menu';
 import Footer from '../../components/footer/footer';
+import '../../assets/styles/css/components/home.css';
 import '../../assets/styles/css/components/main.min.css';
 
 // URLS:
@@ -37,12 +38,16 @@ export default function Home() {
     return (
         <>
             <Menu/>
-            <Mostread api={api_most_read}/>
-            <Carousel api={api_carousel_and_newslist}/>
-            <Newslist api={api_carousel_and_newslist}/>
-            <NewslistSubhome api={api_newslist_subhome}/>
-            <Review api={api_review}/>
-            <Consoles api={api_consoles}/>
+            <div className="test">
+                {/* <Carousel api={api_carousel_and_newslist}/> */}
+                <Newslist api={api_carousel_and_newslist}/>
+                <div className="test2">
+                    <Review api={api_review}/>
+                    <Mostread api={api_most_read}/>
+                    <Consoles api={api_consoles}/>
+                </div>
+            </div>
+            {/* <NewslistSubhome api={api_newslist_subhome}/> */}
             <Footer/>
         </>
     );

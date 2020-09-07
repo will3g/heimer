@@ -1,0 +1,35 @@
+.test {
+    margin: 92px auto 0;
+    width: 280px;
+}
+
+.test2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 375px) {
+    .test {
+        width: 340px;
+    }
+}
+
+@media (min-width: 425px) {
+    .test {
+        width: 375px;
+    }
+}
+
+@media (min-width: 680px) {
+    .test {
+        width: 610px;
+    }
+}
+
+@media (min-width: 990px) {
+    .test {
+        width: 980px;
+        align-items: normal;
+    }
+}
