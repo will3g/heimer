@@ -1,25 +1,6 @@
-@media (max-width: 375px) {
-    .container {
-        max-width: 320px !important;
-    }
-    #review {
-        max-width: 320px !important;
-        .artile-list a {
-            width: 320px !important;
-        }
-        .article-title {
-            max-width: 250px !important;
-        }
-    }
-    .footer-review {
-        float: right !important;
-        margin-left: 0 !important;
-        margin-right: 16px !important;
-    }
-}
-
-.container {
-    max-width: 400px;
+.container-review {
+    display: table;
+    max-width: 348px;
     max-height: 455px;
     padding: 15px 0 0 0;
     background-color: #101010;
@@ -46,14 +27,14 @@
 .rate {
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: 50px;
     top: 0;
     padding: 8px;
 }
 
 #review {
     overflow: hidden;
-    max-width: 400px;
+    width: 348px;
     max-height: 360px;
     margin: 15px 0 -5px 0;
     &::-webkit-scrollbar {
@@ -86,7 +67,7 @@
 
     .article-title {
         margin-top: 30px;
-        max-width: 350px;
+        max-width: 278px;
         font-weight: 700;
         line-height: 1.2;
         -webkit-transition: all 0.2s ease-in-out;
@@ -104,7 +85,7 @@
 
     .score {
         z-index: 2;
-        right: 0;
+        right: 50px;
         top: 0px;
         padding: 23px 19px;
         font-size: 1.3em;
@@ -149,7 +130,7 @@
     margin-top: 12px;
     font-weight: 700;
     font-size: 0.875rem;
-    margin-left: 300px;
+    margin-left: 240px;
     text-decoration: none;
     font-family: sans-serif;
     letter-spacing: -0.018em;
@@ -161,4 +142,105 @@
     min-height: 44px;
     background-image: url(https://obj.ibxk.com.br/layout/voxel/consoles-widget-footer.png);
     background-repeat: no-repeat;
+}
+
+@media (max-width: 332px) {
+    .container-review {
+        max-width: 320px;
+    }
+    #review {
+        max-width: 320px;
+        .artile-list a {
+            width: 320px;
+        }
+        .article-title {
+            max-width: 250px;
+        }
+        .score,
+        .rate {
+            right: 8px;
+        }
+    }
+    .footer-review {
+        float: right;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 424px) {
+    .container-review {
+        max-width: 340px;
+    }
+    #review {
+        max-width: 340px;
+        .artile-list a {
+            width: 340px;
+        }
+        .article-title {
+            max-width: 250px;
+        }
+        .score,
+        .rate {
+            right: 8px;
+        }
+    }
+    .footer-review {
+        float: right;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 600px) {
+    .container-review {
+        max-width: 375px;
+    }
+    #review {
+        max-width: 375px;
+        width: 375px;
+        .artile-list a {
+            width: 375px;
+        }
+        .article-title {
+            max-width: 250px;
+        }
+        .score,
+        .rate {
+            right: 8px;
+        }
+    }
+    .footer-review {
+        float: right;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 679px) {
+    .container-review {
+        max-width: 375px;
+    }
+    #review {
+        width: 375px;
+        .rate,
+        .score {
+            right: 30px;
+        }
+    }
+    .footer-review {
+        margin-left: 260px;
+    }
+}
+
+@media (max-width: 679px) {
+    .container-review {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width: 680px) {
+    .container-review {
+        margin: 40px 0 20px 20px;
+    }
 }

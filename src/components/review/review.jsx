@@ -25,7 +25,7 @@ export default class review extends Component {
         }
 
         return (
-            <div className="container">
+            <div className="container-review">
                 <a href="#" className="header-review">Análises</a>
                 <amp-list id="review" layout="fixed-height" src={this.state.api}>
                 {
