@@ -1,5 +1,4 @@
 .container-review {
-    display: table;
     max-width: 348px;
     max-height: 455px;
     padding: 15px 0 0 0;
@@ -37,6 +36,7 @@
     width: 348px;
     max-height: 360px;
     margin: 15px 0 -5px 0;
+
     &::-webkit-scrollbar {
         width: 10px;
     }
@@ -57,6 +57,7 @@
     .artile-list {
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid #ffffff;
+
         a {
             display: flex;
             width: 400px;
@@ -148,19 +149,24 @@
     .container-review {
         max-width: 320px;
     }
+
     #review {
         max-width: 320px;
+
         .artile-list a {
             width: 320px;
         }
+
         .article-title {
             max-width: 250px;
         }
+
         .score,
         .rate {
             right: 8px;
         }
     }
+
     .footer-review {
         float: right;
         margin-left: 0;
@@ -172,19 +178,24 @@
     .container-review {
         max-width: 340px;
     }
+
     #review {
         max-width: 340px;
+
         .artile-list a {
             width: 340px;
         }
+
         .article-title {
             max-width: 250px;
         }
+
         .score,
         .rate {
             right: 8px;
         }
     }
+
     .footer-review {
         float: right;
         margin-left: 0;
@@ -196,20 +207,25 @@
     .container-review {
         max-width: 375px;
     }
+
     #review {
         max-width: 375px;
         width: 375px;
+
         .artile-list a {
             width: 375px;
         }
+
         .article-title {
             max-width: 250px;
         }
+
         .score,
         .rate {
             right: 8px;
         }
     }
+
     .footer-review {
         float: right;
         margin-left: 0;
@@ -221,13 +237,16 @@
     .container-review {
         max-width: 375px;
     }
+
     #review {
         width: 375px;
+
         .rate,
         .score {
             right: 30px;
         }
     }
+
     .footer-review {
         margin-left: 260px;
     }
@@ -241,6 +260,7 @@
 
 @media (min-width: 680px) {
     .container-review {
+        display: table;
         margin: 40px 0 20px 20px;
     }
 }

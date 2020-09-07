@@ -4,7 +4,7 @@
         padding: 15px 0 0 0;
         background-color: #101010;
     }
-    
+
     .header-most-read {
         font-family: sans-serif;
         color: #ffc13d;
@@ -18,11 +18,11 @@
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-    
+
     .header-most-read:hover {
         color: #ff9900;
     }
-    
+
     .footer-most-read {
         float: left;
         color: #fff;
@@ -36,48 +36,48 @@
         text-transform: uppercase;
         transition: all .2s ease-in-out;
     }
-    
+
     .footer-most-read-logo {
         min-height: 44px;
         background-image: url(https://obj.ibxk.com.br/layout/voxel/consoles-widget-footer.png);
         background-repeat: no-repeat;
     }
-    
+
     #most-read {
         overflow: hidden;
         max-width: 320px;
         margin: 15px 0 -5px 0;
     }
-    
+
     #most-read::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     #most-read::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     }
-    
+
     #most-read::-webkit-scrollbar-thumb {
         background-color: #ffc13d;
         outline: 1px solid #ffc13d;
     }
-    
+
     #most-read button {
         height: 405px;
     }
-    
+
     #most-read .artile-list-most-read {
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid #ffffff;
     }
-    
+
     #most-read .artile-list-most-read a {
         display: flex;
         width: 320px;
         align-items: center;
         text-decoration: none;
     }
-    
+
     #most-read .info-most-read {
         z-index: 1;
         position: absolute;
@@ -85,7 +85,7 @@
         margin-left: 10px;
         font-size: 0.84em;
     }
-    
+
     #most-read .score {
         z-index: 2;
         right: 0;
@@ -94,7 +94,7 @@
         font-size: 1.3em;
         text-shadow: 1px 1px 1px #000;
     }
-        
+
     #most-read .plataform {
         margin-top: 10px;
         font-size: 0.7em;
@@ -102,7 +102,7 @@
         color: #ffc13d;
         text-shadow: 1px 1px 0px #000;
     }
-    
+
     #most-read .article-title-most-read {
         flex-direction: column;
         display: flex;
@@ -118,14 +118,14 @@
         text-shadow: 1px 1px 0px #000;
         transition: all .2s ease-in-out;
     }
-    
+
     #most-read amp-img {
         width: 100%;
         max-height: 130px;
         filter: contrast(1.5);
         box-shadow: 10px 10px 20px 2px #000;
     }
-    
+
     #most-read amp-img img {
         z-index: 0;
         filter: brightness(0.65);
@@ -133,19 +133,20 @@
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
     }
-    
+
     #most-read amp-img img:hover {
         filter: brightness(0.9);
     }
+
     #most-read amp-img:hover {
         z-index: 2;
         box-shadow: 0px 0px 10px 0px #ffc13d;
     }
-    
+
     #most-read[selected] {
         box-shadow: 10px yellow;
     }
-    
+
 }
 
 @media (min-width: 321px) and (max-width: 424px) {
@@ -154,7 +155,7 @@
         padding: 15px 0 0 0;
         background-color: #101010;
     }
-    
+
     .header-most-read {
         font-family: sans-serif;
         color: #ffc13d;
@@ -168,11 +169,11 @@
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-    
+
     .header-most-read:hover {
         color: #ff9900;
     }
-    
+
     .footer-most-read {
         float: left;
         color: #fff;
@@ -186,48 +187,48 @@
         text-transform: uppercase;
         transition: all .2s ease-in-out;
     }
-    
+
     .footer-most-read-logo {
         min-height: 44px;
         background-image: url(https://obj.ibxk.com.br/layout/voxel/consoles-widget-footer.png);
         background-repeat: no-repeat;
     }
-    
+
     #most-read {
         overflow: hidden;
         max-width: 340px;
         margin: 15px 0 -5px 0;
     }
-    
+
     #most-read::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     #most-read::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     }
-    
+
     #most-read::-webkit-scrollbar-thumb {
         background-color: #ffc13d;
         outline: 1px solid #ffc13d;
     }
-    
+
     #most-read button {
         height: 405px;
     }
-    
+
     #most-read .artile-list-most-read {
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid #ffffff;
     }
-    
+
     #most-read .artile-list-most-read a {
         display: flex;
         width: 340px;
         align-items: center;
         text-decoration: none;
     }
-    
+
     #most-read .info-most-read {
         z-index: 1;
         position: absolute;
@@ -235,7 +236,7 @@
         margin-left: 10px;
         font-size: 0.84em;
     }
-    
+
     #most-read .score {
         z-index: 2;
         right: 0;
@@ -244,7 +245,7 @@
         font-size: 1.3em;
         text-shadow: 1px 1px 1px #000;
     }
-    
+
     .rate {
         position: absolute;
         z-index: 1;
@@ -252,7 +253,7 @@
         top: 0;
         padding: 8px;
     }
-    
+
     #most-read .plataform {
         margin-top: 10px;
         font-size: 0.7em;
@@ -260,7 +261,7 @@
         color: #ffc13d;
         text-shadow: 1px 1px 0px #000;
     }
-    
+
     #most-read .article-title-most-read {
         text-transform: uppercase;
         flex-direction: column;
@@ -276,14 +277,14 @@
         text-shadow: 1px 1px 0px #000;
         transition: all .2s ease-in-out;
     }
-    
+
     #most-read amp-img {
         width: 100%;
         max-height: 130px;
         filter: contrast(1.5);
         box-shadow: 10px 10px 20px 2px #000;
     }
-    
+
     #most-read amp-img img {
         z-index: 0;
         filter: brightness(0.65);
@@ -291,15 +292,16 @@
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
     }
-    
+
     #most-read amp-img img:hover {
         filter: brightness(0.9);
     }
+
     #most-read amp-img:hover {
         z-index: 2;
         box-shadow: 0px 0px 10px 0px #ffc13d;
     }
-    
+
     #most-read[selected] {
         box-shadow: 10px yellow;
     }
@@ -311,7 +313,7 @@
         padding: 15px 0 0 0;
         background-color: #101010;
     }
-    
+
     .header-most-read {
         font-family: sans-serif;
         color: #ffc13d;
@@ -325,11 +327,11 @@
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-    
+
     .header-most-read:hover {
         color: #ff9900;
     }
-    
+
     .footer-most-read {
         float: left;
         color: #fff;
@@ -343,48 +345,48 @@
         text-transform: uppercase;
         transition: all .2s ease-in-out;
     }
-    
+
     .footer-most-read-logo {
         min-height: 44px;
         background-image: url(https://obj.ibxk.com.br/layout/voxel/consoles-widget-footer.png);
         background-repeat: no-repeat;
     }
-    
+
     #most-read {
         overflow: hidden;
         max-width: 375px;
         margin: 15px 0 -5px 0;
     }
-    
+
     #most-read::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     #most-read::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     }
-    
+
     #most-read::-webkit-scrollbar-thumb {
         background-color: #ffc13d;
         outline: 1px solid #ffc13d;
     }
-    
+
     #most-read button {
         height: 405px;
     }
-    
+
     #most-read .artile-list-most-read {
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid #ffffff;
     }
-    
+
     #most-read .artile-list-most-read a {
         display: flex;
         width: 375px;
         align-items: center;
         text-decoration: none;
     }
-    
+
     #most-read .info-most-read {
         z-index: 1;
         position: absolute;
@@ -392,7 +394,7 @@
         margin-left: 10px;
         font-size: 0.84em;
     }
-    
+
     #most-read .score {
         z-index: 2;
         right: 0;
@@ -401,7 +403,7 @@
         font-size: 1.3em;
         text-shadow: 1px 1px 1px #000;
     }
-    
+
     .rate {
         position: absolute;
         z-index: 1;
@@ -409,7 +411,7 @@
         top: 0;
         padding: 8px;
     }
-    
+
     #most-read .plataform {
         margin-top: 10px;
         font-size: 0.7em;
@@ -417,7 +419,7 @@
         color: #ffc13d;
         text-shadow: 1px 1px 0px #000;
     }
-    
+
     #most-read .article-title-most-read {
         text-transform: uppercase;
         flex-direction: column;
@@ -433,14 +435,14 @@
         text-shadow: 1px 1px 0px #000;
         transition: all .2s ease-in-out;
     }
-    
+
     #most-read amp-img {
         width: 100%;
         max-height: 130px;
         filter: contrast(1.5);
         box-shadow: 10px 10px 20px 2px #000;
     }
-    
+
     #most-read amp-img img {
         z-index: 0;
         filter: brightness(0.65);
@@ -448,15 +450,16 @@
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
     }
-    
+
     #most-read amp-img img:hover {
         filter: brightness(0.9);
     }
+
     #most-read amp-img:hover {
         z-index: 2;
         box-shadow: 0px 0px 10px 0px #ffc13d;
     }
-    
+
     #most-read[selected] {
         box-shadow: 10px yellow;
     }
@@ -469,6 +472,7 @@
         padding: 15px 0 0 0;
         background-color: #101010;
     }
+
     .header-most-read {
         font-family: sans-serif;
         color: #ffc13d;
@@ -482,9 +486,11 @@
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
+
     .header-most-read:hover {
         color: #ff9900;
     }
+
     .footer-most-read {
         float: left;
         color: #fff;
@@ -498,39 +504,48 @@
         text-transform: uppercase;
         transition: all .2s ease-in-out;
     }
+
     .footer-most-read-logo {
         min-height: 44px;
         background-image: url(https://obj.ibxk.com.br/layout/voxel/consoles-widget-footer.png);
         background-repeat: no-repeat;
     }
+
     #most-read {
         overflow: hidden;
         width: 348px;
         margin: 15px 0 -5px 0;
     }
+
     #most-read::-webkit-scrollbar {
         width: 10px;
     }
+
     #most-read::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     }
+
     #most-read::-webkit-scrollbar-thumb {
         background-color: #ffc13d;
         outline: 1px solid #ffc13d;
     }
+
     #most-read button {
         height: 405px;
     }
+
     #most-read .artile-list-most-read {
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid #ffffff;
     }
+
     #most-read .artile-list-most-read a {
         display: flex;
         width: 375px;
         align-items: center;
         text-decoration: none;
     }
+
     #most-read .info-most-read {
         z-index: 1;
         position: absolute;
@@ -538,6 +553,7 @@
         margin-left: 10px;
         font-size: 0.84em;
     }
+
     #most-read .score {
         z-index: 2;
         right: 0;
@@ -546,6 +562,7 @@
         font-size: 1.3em;
         text-shadow: 1px 1px 1px #000;
     }
+
     .rate {
         position: absolute;
         z-index: 1;
@@ -553,6 +570,7 @@
         top: 0;
         padding: 8px;
     }
+
     #most-read .plataform {
         margin-top: 10px;
         font-size: 0.7em;
@@ -560,6 +578,7 @@
         color: #ffc13d;
         text-shadow: 1px 1px 0px #000;
     }
+
     #most-read .article-title-most-read {
         text-transform: uppercase;
         flex-direction: column;
@@ -575,12 +594,14 @@
         text-shadow: 1px 1px 0px #000;
         transition: all .2s ease-in-out;
     }
+
     #most-read amp-img {
         width: 100%;
         max-height: 130px;
         filter: contrast(1.5);
         box-shadow: 10px 10px 20px 2px #000;
     }
+
     #most-read amp-img img {
         z-index: 0;
         filter: brightness(0.65);
@@ -588,13 +609,16 @@
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
     }
+
     #most-read amp-img img:hover {
         filter: brightness(0.9);
     }
+
     #most-read amp-img:hover {
         z-index: 2;
         box-shadow: 0px 0px 10px 0px #ffc13d;
     }
+
     #most-read[selected] {
         box-shadow: 10px yellow;
     }
