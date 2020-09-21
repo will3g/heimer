@@ -1,46 +1,43 @@
 import React from 'react';
 
-import api from "../../services/subhome.json";
+import api_newslist_subhome from "../../services/newslist-3.json";
+import NewslistSubhome from '../../components/newslist/newslist-3';
 
+// UTILIZADO EM REVIEW
+import Review from '../../components/review/review';
+import api_review from "../../services/review.json";
+
+// UTILIZADO EM CONSOLES
+import api_consoles from "../../services/consoles.json";
+import Consoles from '../../components/consoles/consoles';
+
+// UTILIZADO EM MAIS LIDAS
+import api_most_read from "../../services/most-read.json";
+import Mostread from '../../components/most-read/mostRead';
+
+// COMPONENTES
 import Menu from '../../components/menu/menu';
-import Featured from '../../components/featured/featured';
-import FeaturedMain from '../../components/featured/featuredMain';
-import Advertising from '../../components/advertising/advertising';
 import Footer from '../../components/footer/footer';
-
+import '../../assets/styles/css/components/home.css';
 import '../../assets/styles/css/components/main.min.css';
 
-export default function subhome() {
+// URLS:
+/*
+    http://localhost:3000/
+    http://localhost:3000/subhome
+*/
 
-    return(
+export default function Home() {
+    return (
         <>
             <Menu/>
-            <div className="content">
-                {api.map((e, index) => {
-                        if (e.featured_main) {
-                            return( 
-                                <FeaturedMain 
-                                    images={e.images} 
-                                    title={e.title} 
-                                    description={e.description} 
-                                    typeContent={e.type_content}
-                                />
-                            )
-                        } else {
-                            return(
-                                <Featured 
-                                    item={index}
-                                    images={e.images} 
-                                    title={e.title} 
-                                    description={e.description} 
-                                    typeContent={e.type_content}
-                                />
-                            )
-                        }
-                    }
-                )}
-                <Advertising adv="fake" item={1}/>
-                <Advertising adv="fake" item={2}/>
+            <div className="test test-subhome">
+                <NewslistSubhome api={api_newslist_subhome}/>
+                <div className="test2 test2-subhome">
+                    <Review api={api_review}/>
+                    <Mostread api={api_most_read}/>
+                    <Consoles api={api_consoles}/>
+                </div>
             </div>
             <Footer/>
         </>
