@@ -1,7 +1,6 @@
 #newslist-container {
 	$WIDTH-BREAKPOINT-320PX: 90vw;
 	display: flex;
-	// margin: 0 auto;
 	max-width: $WIDTH-BREAKPOINT-320PX;
 	font-family: sans-serif !important;
 	overflow: hidden;
@@ -162,7 +161,7 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		max-width: $WIDTH-BREAKPOINT-320PX;
-		min-height: 40px;
+		min-height: 30px;
 		align-items: center;
 		-ms-flex-align: center;
 		-webkit-box-align: center;
@@ -240,9 +239,14 @@
 @media (min-width: 768px) {
 	$WIDTH-BREAKPOINT-680PX: 754px;
 	#newslist-container {
-		max-width: $WIDTH-BREAKPOINT-680PX;
+		display: flex;
+		margin: 0 auto;
+		max-width: 645px;
 		amp-img {
+			border-radius: 6px;
+			transition: all 0.4s ease-in-out;
 			width: $WIDTH-BREAKPOINT-680PX !important;
+			-webkit-transition: all 0.4s ease-in-out;
 		}
 		div header {
 			max-width: $WIDTH-BREAKPOINT-680PX;
@@ -254,14 +258,14 @@
 			}
 		}
 		.article-main a amp-img {
-			height: 380px !important;
+			height: 340px !important;
 		}
 		.contrast {
 			float: left;
 			margin: 10px 20px 0 auto;
 		}
 		.contrast-0 a amp-img {
-			width: $WIDTH-BREAKPOINT-680PX !important;
+			width: 644px !important;
 		}
 		.contrast-1 a amp-img,
 		.contrast-2 a amp-img,
@@ -279,8 +283,8 @@
 		.contrast-14 a amp-img,
 		.contrast-15 a amp-img,
 		.contrast-16 a amp-img {
-			width: 367px !important;
-			height: 260px !important;
+			width: 312px!important;
+			height: 232px!important;
 		}
 
 		.contrast-17 {
@@ -289,18 +293,6 @@
 
 		.info {
 			margin-bottom: 10px;
-		}
-
-		#newslist-container {
-			display: flex;
-			max-width: 768px;
-			margin: 0 auto;
-
-			amp-img {
-				border-radius: 6px;
-				-webkit-transition: all 0.4s ease-in-out;
-				transition: all 0.4s ease-in-out;
-			}
 		}
 
 		.article-normal {
@@ -342,7 +334,7 @@
 		}
 
 		.home-news-list-header {
-			max-width: $WIDTH-BREAKPOINT-680PX;
+			max-width: 644px;
 		}
 
 		.home-vertical-news-title {
@@ -487,5 +479,19 @@
 		.article-main .i-amphtml-layout-size-defined .i-amphtml-fill-content:hover {
 			opacity: 0.8;
 		}
+	}
+
+	.test-subhome {
+		width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	#newslist-container {
+		float: left;
+	}
+
+	.test-subhome {
+		width: 1010px;
 	}
 }
