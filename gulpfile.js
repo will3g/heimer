@@ -7,7 +7,7 @@ const cleanCSS = require('gulp-clean-css');
 
 var paths = {
     styles: {
-        src: 'src/assets/styles/scss/components/*.scss',
+        src: 'src/assets/styles/scss/components/**/*.scss',
         dest: 'src/assets/styles/css/components/'
     }
 };
@@ -22,11 +22,6 @@ function styles() {
             outputStyle: 'compressed' 
         }))
         .pipe(cleanCSS())
-        .pipe(rename({
-            basename: 'main',
-            suffix: '.min'
-        }))
-        .pipe(concat('main.min.css'))
         .pipe(gulp.dest(paths.styles.dest));
 }
 
@@ -42,18 +37,3 @@ exports.watch = watch;
 exports.build = build;
 
 exports.default = build;
-//------------------------------
-
-// gulp.task('sass', function (cb) {
-//     console.log();
-//     return gulp.src('/src/assets/styles/scss/components/*.scss')
-//         .pipe(sass({ outputStyle: 'compressed' })
-//             .on('error', sass.logError)).pipe(concat('bundle.min.css'))
-//         .pipe(gulp.dest('./dist'), cb);
-// });
-
-// gulp.task('watch', function () {
-//     gulp.watch('/src/assets/styles/scss/components/*.scss', ['sass'])
-// });
-
-// gulp.task('default', ['watch']);
