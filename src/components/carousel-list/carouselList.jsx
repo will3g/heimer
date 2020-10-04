@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/home/carousel-list.css';
+
 export default class carouselList extends Component {
 
     constructor(props) {

@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/most-read.css';
+
 export default class mostread extends Component {
 
     constructor(props) {

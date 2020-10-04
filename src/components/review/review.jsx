@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/review.css';
+
 export default class review extends Component {
 
     constructor(props) {

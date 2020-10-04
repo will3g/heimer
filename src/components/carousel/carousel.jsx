@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/home/carousel.css';
+
 import ImageCarousel from './imageCarousel';
 import CarouselList from '../carousel-list/carouselList';
 

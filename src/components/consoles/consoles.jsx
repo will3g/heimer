@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/consoles.css';
+
 export default class consoles extends Component {
 
     constructor(props) {

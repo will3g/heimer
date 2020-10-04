@@ -1,6 +1,8 @@
 // Componentes: Thumbnail, Título, Type, description
 import React, { Component } from 'react';
 
+import '../../assets/styles/css/components/newslist.css';
+
 export default class newslist extends Component {
 
     constructor(props) {
