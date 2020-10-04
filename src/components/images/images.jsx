@@ -21,7 +21,7 @@ export default class Images extends Component {
     componentWillMount() {
         let images = [];
 
-        Article.images.map(image => images.push(image));
+        this.props.images.map(image => images.push(image));
         this.setState({images});
     }
 
