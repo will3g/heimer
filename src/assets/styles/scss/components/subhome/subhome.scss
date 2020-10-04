@@ -1,0 +1,38 @@
+.container-subhome {
+    margin: 92px auto 0;
+    width: 300px;
+}
+
+.subcomponents-subhome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 375px) {
+    .container-subhome {
+        width: 340px;
+    }
+}
+
+@media (min-width: 425px) {
+    .container-subhome {
+        width: 400px;
+    }
+}
+
+@media (min-width: 680px) {
+    .container-subhome {
+        width: 645px;
+    }
+}
+
+@media (min-width: 990px) {
+    .subcomponents-subhome {
+        margin-right: 10px;
+    }
+    .container-subhome {
+        width: 1002px;
+        align-items: normal;
+    }
+}

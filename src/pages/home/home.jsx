@@ -26,7 +26,6 @@ import Mostread from '../../components/most-read/mostRead';
 import Menu from '../../components/menu/menu';
 import Footer from '../../components/footer/footer';
 import '../../assets/styles/css/components/home/home.css';
-//import '../../assets/styles/css/components/main.min.css';
 
 // URLS:
 /*

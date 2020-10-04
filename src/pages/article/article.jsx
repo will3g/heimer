@@ -14,8 +14,6 @@ import TypeContent from "../../components/type/typeContent";
 import PublicationDate from "../../components/publication/publicationDate";
 import Thumbnail from "../../components/thumbnail/thumbnail";
 
-// import '../../assets/styles/css/components/main.min.css';
-
 export default function article() {
     return(
         <>
