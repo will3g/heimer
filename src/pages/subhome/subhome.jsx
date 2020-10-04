@@ -18,8 +18,8 @@ import Mostread from '../../components/most-read/mostRead';
 // COMPONENTES
 import Menu from '../../components/menu/menu';
 import Footer from '../../components/footer/footer';
-import '../../assets/styles/css/components/home.css';
-import '../../assets/styles/css/components/main.min.css';
+import '../../assets/styles/css/components/subhome/subhome.css';
+// import '../../assets/styles/css/components/main.min.css';
 
 // URLS:
 /*
@@ -27,13 +27,13 @@ import '../../assets/styles/css/components/main.min.css';
     http://localhost:3000/subhome
 */
 
-export default function Home() {
+export default function Subhome() {
     return (
         <>
             <Menu/>
-            <div className="test test-subhome">
+            <div className="container-subhome">
                 <NewslistSubhome api={api_newslist_subhome}/>
-                <div className="test2 test2-subhome">
+                <div className="subcomponents-subhome">
                     <Review api={api_review}/>
                     <Mostread api={api_most_read}/>
                     <Consoles api={api_consoles}/>
